@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.5s ease;
+}
+
+body {
+    font-family: cursive;
+}
+
+
+body {
+    background-color: #ffffff;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.calculator {
+    position: absolute;
+    height: 30em;
+    width: 30em;
+    padding: 20px;
+    background-image: url("https://i.pinimg.com/564x/e0/b9/26/e0b9264a317f2c69308f4caf9fc09b18.jpg");
+    border-radius: 50%;
+    box-shadow: 0px 0px 30px #340856;
+}
+
+#display {
+    margin: 0 10px;
+    height: 150px;
+    width: auto;
+    max-width: 270px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 10px;
+    
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    border: 0;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 200ms ease;
+    translate: 115px;
+    box-shadow: 0px 0px 50px black;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 105px;
+}
+
+.calculator #display {
+    color: #ffffff;
+    border-color: rgba(68, 13, 131, 0.747);
+    border-style: double;
+    border-width: 5px;
+    translate: 75px;
+    border-radius: 100%;
+}
