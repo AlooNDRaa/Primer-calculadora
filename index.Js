@@ -11,23 +11,10 @@ buttons.forEach((item) => {
     } else if (display.innerText != "" && item.id == "equal") {
       display.innerText = eval(display.innerText);
     } else if (display.innerText == "" && item.id == "equal") {
-      display.innerText = "ERROR 404";
+      display.innerText = "ABUELA LAA LA";
       setTimeout(() => (display.innerText = ""), 2000);
     } else {
       display.innerText += item.id;
     }
   };
 });
-
-const themeToggleBtn = document.querySelector(".theme-toggler");
-const calculator = document.querySelector(".calculator");
-const toggleIcon = document.querySelector(".toggler-icon");
-let isDark = true;
-themeToggleBtn.onclick = () => {
-  calculator.classList.toggle("dark");
-  themeToggleBtn.classList.toggle("active");
-  isDark = !isDark;
-};
-
-var sonido = new audio (laser.mp3)
-sonido.src = laser.mp3
